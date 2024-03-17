@@ -11,7 +11,7 @@
 }
 
 a:hover {
-  color: darkred;
+  color: grey;
 }
 
 body {
@@ -43,7 +43,7 @@ body {
 }
 
 .contact-left-title h2 {
-  font-weight: 600;
+  font-weight: 500;
   color: white;
   font-size: 40px;
   margin-bottom: 5px;
@@ -53,7 +53,7 @@ body {
   border: none;
   width: 120px;
   height: 5px;
-  background-color: darkred;
+  background-color: grey;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -76,11 +76,11 @@ body {
 }
 
 .contact-inputs:focus {
-   border: 2px solid darkred;
+   border: 2px solid grey;
 }
 
 contact-inputs::placeholder {
-  color: darkred;
+  color: grey;
 }
 
 .contact-left button {
@@ -91,18 +91,72 @@ contact-inputs::placeholder {
   color: white;
   border: none;
   border-radius: 50px;
-  background: linear-gradient(90deg,black, darkred);
+  background: linear-gradient(90deg,black,grey);
   cursor: pointer;
-}
-
-@media (max-width 800px) {
-  .contact-inputs {
-    width: 80vw;
-  }
 }
 
 #hero-text {
   font-family:'Courier New', Courier, monospace;
   text-shadow: 2px 5px 5px black;
-  padding-bottom: 900px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item {
+  width: 50px;
+  height: 5px;
+}
+
+.flex-container button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(90deg,black, grey);
+  cursor: pointer;
+}
+
+@media (max-width: 681px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 681px) {
+  #contact-form {
+    display: none;
+  }
+}
+
+@media (max-width: 681px) {
+  #hero-text {
+    height: 350px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 681px) {
+  .contact {
+    display: none;
+    color: white;
+  }
+}
+
+@media (min-width: 681px) {
+  #portfolio-btn {
+    display: none;
+  }
+}
+
+#footer {
+  color: white;
 }
