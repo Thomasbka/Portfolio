@@ -100,10 +100,21 @@ contact-inputs::placeholder {
   text-shadow: 2px 5px 5px black;
 }
 
+.social a {
+  color: white;
+}
+
+@media (max-width: 681px) {
+  #socials {
+    padding-top: 30px;
+  }
+}
+
 .flex-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 .flex-item {
