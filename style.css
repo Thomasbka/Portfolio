@@ -137,6 +137,12 @@ contact-inputs::placeholder {
 @media (max-width: 681px) {
   .contact-container {
     flex-direction: column;
+    padding-top: none;
+    padding-bottom: none;
+    margin-bottom: none;
+    margin-top: none;
+    border-top: none;
+    border-bottom: none;
   }
 }
 
@@ -152,6 +158,12 @@ contact-inputs::placeholder {
     padding-bottom: 0px;
     margin-bottom: 0px;
     padding-top: 0px;
+  }
+}
+
+@media (max-width: 681px) {
+  #about {
+    padding-top: 500px;
   }
 }
 
@@ -188,5 +200,9 @@ h1 {
   color: white;
 }
 #footer {
+  color: white;
+}
+
+p {
   color: white;
 }
