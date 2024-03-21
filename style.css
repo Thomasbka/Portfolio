@@ -26,10 +26,10 @@ body {
 
 .contact-container {
   color: white;
-  padding: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
   margin: 0;
   box-sizing: border-box;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -148,22 +148,15 @@ contact-inputs::placeholder {
 
 @media (max-width: 681px) {
   #contact-form {
-    display: none;
+    display: none; 
   }
 }
 
 @media (max-width: 681px) {
   #hero-text {
-    height: 350px;
     padding-bottom: 0px;
     margin-bottom: 0px;
     padding-top: 0px;
-  }
-}
-
-@media (max-width: 681px) {
-  #about {
-    padding-top: 500px;
   }
 }
 
